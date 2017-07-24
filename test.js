@@ -26,3 +26,10 @@ describe('Game Test', function() {
         });
     });
 });
+
+// Failing Test
+describe('Fail Test', function() {
+    it('1 + 1 should equal 2', function() {
+        assert.equal(3, 1 + 1);
+    });
+});
