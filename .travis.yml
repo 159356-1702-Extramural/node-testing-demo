@@ -3,3 +3,5 @@ node_js:
 - "stable"
 after_success:
 - npm run coveralls
+notifications:
+  slack: 1593561702extramural:GwaO5sOja7Oy2kdfJ8xe1jTh
