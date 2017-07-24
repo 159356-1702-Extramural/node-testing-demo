@@ -1,0 +1,14 @@
+{
+  "name": "node_testing_demo",
+  "version": "1.0.0",
+  "description": "Just testing testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
