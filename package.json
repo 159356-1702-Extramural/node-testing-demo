@@ -5,13 +5,13 @@
   "main": "app.js",
   "scripts": {
     
-    // Unit test
+    "//"  : "Testing Framework",
     "test": "mocha",
-
-    // Code coverage
+    
+    "//"   : "Code Coverage Analysis",
     "cover": "istanbul cover _mocha",
     
-    // pipes istanbul's report over to Coveralls
+    "//"       : "Sends Coverage Report to Coveralls",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "Tim Ackroyd",
