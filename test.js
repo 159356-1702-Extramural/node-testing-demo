@@ -28,8 +28,8 @@ describe('Game Test', function() {
 });
 
 // Failing Test
-describe('Fail Test', function() {
+describe('Test Addition', function() {
     it('1 + 1 should equal 2', function() {
-        assert.equal(3, 1 + 1);
+        assert.equal(2, 1 + 1);
     });
 });
