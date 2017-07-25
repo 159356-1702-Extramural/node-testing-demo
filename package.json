@@ -4,14 +4,9 @@
   "description": "Just testing testing",
   "main": "app.js",
   "scripts": {
-    
-    "//"  : "Testing Framework",
+    "//": "Sends Coverage Report to Coveralls",
     "test": "mocha",
-    
-    "//"   : "Code Coverage Analysis",
     "cover": "istanbul cover _mocha",
-    
-    "//"       : "Sends Coverage Report to Coveralls",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "Tim Ackroyd",
