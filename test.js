@@ -19,15 +19,7 @@ test('The game name should be: Settlers of Catan', function(t) {
     t.true(game.getGameName() == 'Settlers of Catan');
 });
 
-// Failing test..
+// Another test..
 test('1 + 1 should equal 2', function(t) {
-    t.true(1 + 1 == 3);
+    t.true(1 + 1 == 2);
 });
-
-
-// // Failing Test
-// describe('Test Addition', function() {
-//     it('1 + 1 should equal 2', function() {
-//         assert.equal(2, 1 + 1);
-//     });
-// });
