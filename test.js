@@ -23,3 +23,8 @@ test('The game name should be: Settlers of Catan', function(t) {
 test('1 + 1 should equal 2', function(t) {
     t.true(1 + 1 == 2);
 });
+
+// One more..
+test('2 + 2 should equal 4', function(t) {
+    t.is(2 + 2, 4);
+});
