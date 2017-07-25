@@ -2,6 +2,6 @@ language: node_js
 node_js:
 - "stable"
 after_success:
-- npm run coveralls
+- './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
 notifications:
   slack: 1593561702extramural:GwaO5sOja7Oy2kdfJ8xe1jTh
