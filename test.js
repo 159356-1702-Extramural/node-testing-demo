@@ -33,3 +33,18 @@ describe('Test Addition', function() {
         assert.equal(2, 1 + 1);
     });
 });
+
+
+//Selenium
+
+const {Builder, By, until} = require('..');
+
+var driver = new Builder()
+    .forBrowser('firefox')
+    .build();
+
+driver.get('http://www.google.com/ncr')
+    .then(_ => driver.findElement(By.name('q')).sendKeys('webdriver'))
+    .then(_ => driver.findElement(By.name('btnG')).click())
+    .then(_ => driver.wait(until.titleIs('webdriver - Google Search'), 1000))
+    .then(_ => driver.quit());

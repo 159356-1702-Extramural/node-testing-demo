@@ -1,11 +1,16 @@
 language: node_js
+dist: "trusty"
 node_js:
 - "stable"
+before_install:
+- stty cols 80
+install:
+- pip install selenium nose --use-mirrors
+before_script:
+ - curl https://github.com/159356-1702-Extramural/node-testing-demo/sauce_files/sauce_connect.sh | bash
 after_success:
 - npm run coveralls
 notifications:
   slack: 1593561702extramural:GwaO5sOja7Oy2kdfJ8xe1jTh
 addons:
-  sauce_connect:
-    username: "sumnerfit"
-    access_key: "jg_4SsRbb"
+  sauce_connect: true
