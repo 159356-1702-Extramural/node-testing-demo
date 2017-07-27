@@ -91,11 +91,16 @@ test.describe('Google Search', function() {
   var driver;
 
   test.beforeEach(function() {
-    var browser = process.env.BROWSER,
-        version = process.env.VERSION,
-        platform = process.env.PLATFORM,
-        server = "http://" + username + ":" + accessKey + 
-                  "@ondemand.saucelabs.com:80/wd/hub"; 
+      var browserName = 'chrome'
+    platform = 'Windows XP'
+    version = '43.0'
+    username= 'sumnerfit';
+
+    // var browser = process.env.BROWSER,
+    //     version = process.env.VERSION,
+    //     platform = process.env.PLATFORM,
+    //     server = "http://" + username + ":" + accessKey + 
+    //               "@ondemand.saucelabs.com:80/wd/hub"; 
 
     driver = new webdriver.Builder().
       withCapabilities({
