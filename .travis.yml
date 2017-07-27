@@ -2,11 +2,8 @@ language: node_js
 dist: "trusty"
 node_js:
 - "stable"
-before_install:
-- stty cols 80
 install:
-- npm install selenium
-
+- npm install selenium selenium-webdriver
 after_success:
 - npm run coveralls
 notifications:
