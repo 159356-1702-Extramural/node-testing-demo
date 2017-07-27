@@ -45,6 +45,11 @@ var driver = new Builder()
 
 driver.get('http://www.google.com/ncr')
     .then(_ => driver.findElement(By.name('q')).sendKeys('webdriver'))
-    .then(_ => driver.findElement(By.name('btnG')).click())
+    .then(_ => driver.findElement(By.name('btnK')).click())
     .then(_ => driver.wait(until.titleIs('webdriver - Google Search'), 1000))
+    .then(function(value) {
+            var title = dialog.FindElements(By.TagName("title"))[0].getAttribute('innerHTML'); //get the first title tag (only title tag)
+            assert.equal(title, 'webdriver - Google Search');
+            done();
+    })
     .then(_ => driver.quit());
