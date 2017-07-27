@@ -5,7 +5,7 @@ node_js:
 before_install:
 - stty cols 80
 install:
-- npm install selenium sauceclient
+- npm install selenium
 before_script:
  - curl https://github.com/159356-1702-Extramural/node-testing-demo/sauce_files/sauce_connect.sh | bash
 after_success:
