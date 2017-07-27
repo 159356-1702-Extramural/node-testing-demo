@@ -37,7 +37,7 @@ describe('Test Addition', function() {
 
 //Selenium
 
-const {Builder, By, until} = require('..');
+const {Builder, By, until} = require('selenium-webdriver');
 
 var driver = new Builder()
     .forBrowser('firefox')
