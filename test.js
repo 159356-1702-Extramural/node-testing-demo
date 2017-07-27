@@ -91,7 +91,7 @@ test.describe('Google Search', function() {
   var driver;
 
   test.beforeEach(function() {
-      var browserName = 'chrome'
+      var browser = 'chrome'
     platform = 'Windows XP'
     version = '43.0'
     username= 'sumnerfit';
