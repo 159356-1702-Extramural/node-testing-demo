@@ -49,10 +49,10 @@ driver.get('http://www.google.com/ncr')
     .then(_ => driver.wait(until.titleIs('webdriver - Google Search'), 1000))
     .then(_ => driver.quit());
 
-    saucelabs.updateJob(driver.sessionID, {
-      name: title,
-      passed: passed
-    }, done);
+    // saucelabs.updateJob(driver.sessionID, {
+    //   name: title,
+    //   passed: passed
+    // }, done);
  
 //   test.beforeEach(function() {
 //     var browser = 'chrome';
