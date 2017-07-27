@@ -91,10 +91,10 @@ test.describe('Google Search', function() {
   var driver;
 
   test.beforeEach(function() {
-      var browser = 'chrome'
-    platform = 'Windows XP'
-    version = '43.0'
-    username= 'sumnerfit';
+    var browser = 'chrome';
+    var platform = 'Windows XP';
+    var version = '43.0';
+    var username= 'sumnerfit';
 
     // var browser = process.env.BROWSER,
     //     version = process.env.VERSION,
