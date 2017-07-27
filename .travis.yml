@@ -3,7 +3,7 @@ dist: "trusty"
 node_js:
 - "stable"
 install:
-- npm install selenium selenium-webdriver gecko-driver
+- npm install selenium selenium-webdriver geckodriver
 after_success:
 - npm run coveralls
 notifications:

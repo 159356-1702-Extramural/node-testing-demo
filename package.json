@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "Builder": "^2.1.0",
+    "geckodriver": "^1.8.0",
     "new": "^0.1.1",
     "node": "^8.2.1",
     "nose": "^0.1.0",
