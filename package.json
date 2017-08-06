@@ -24,6 +24,8 @@
     "new": "^0.1.1",
     "node": "^8.2.1",
     "nose": "^0.1.0",
-    "selenium": "^2.20.0"
+    "selenium": "^2.20.0",
+    "selenium-sauce": "^0.4.1",
+    "webdriverio": "^4.8.0"
   }
 }
